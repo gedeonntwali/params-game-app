@@ -1,1 +1,4 @@
-<h1> Hey my name is <%= @message %></h1>
+<h1> Hey, your name is <%= @message %></h1>
+<% if @message.start_with?("a") %>
+  Hey, your name starts with the first letter of the alphabet!”
+<% end %>  
